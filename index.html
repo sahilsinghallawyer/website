@@ -3,751 +3,224 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#170d22">
-<title>Happy Birthday, Pari</title>
+<title>Parikshita Mathur | Group Legal Head, Corporate Litigation and White-Collar Crime</title>
+<meta name="description" content="Parikshita Mathur is Group Legal Head at Caparo India and a Certified Fraud Examiner. A litigator with 12+ years of experience, she advises on corporate disputes and white-collar crime.">
+<meta name="theme-color" content="#1b1226">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --night:#170d22; --night-2:#2a1538; --plum:#4a1f45;
-    --gold:#e8cd96; --gold-deep:#b98a4b; --gold-ink:#8a5f2a;
-    --rose:#d99aa8; --rose-deep:#a8506f;
-    --paper:#fdf6f1; --blush:#f4d9d3;
-    --wine:#4a1d36; --wine-soft:#7a4a62;
+    --ink:#1b1226; --ink-2:#4d4559; --paper:#f6f4f8; --white:#ffffff;
+    --plum:#4b2347; --brass:#a07a3f; --brass-lt:#d9bd8a; --line:#ddd6e3;
+    --serif:'Fraunces',Georgia,serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  [hidden]{display:none!important}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;line-height:1.6;
-    color:var(--gold);background:var(--night);overflow-x:hidden;
-  }
-  button{font-family:inherit}
-  button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:var(--sans);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--paper)}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+  .wrap{width:min(1080px,100% - 44px);margin-inline:auto}
 
-  body::after{
-    content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.16;mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
-  }
-  #stars,#petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
-  #stars{z-index:0}
-  #petals{z-index:40}
-  .balloons{position:fixed;inset:0;pointer-events:none;z-index:30;overflow:hidden}
-  .balloon{position:absolute;bottom:-120px;width:34px;height:42px;border-radius:50% 50% 48% 48%;opacity:.6;animation:rise linear forwards}
-  .balloon::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:46px;background:rgba(232,205,150,.55)}
-  @keyframes rise{
-    0%{transform:translateY(0) translateX(0) rotate(-3deg)}
-    50%{transform:translateY(-65vh) translateX(10px) rotate(3deg)}
-    100%{transform:translateY(-135vh) translateX(-8px) rotate(-2deg)}
-  }
+  header{position:absolute;top:0;left:0;right:0;z-index:5;padding:22px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .brand{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:var(--white);text-decoration:none}
+  nav{display:flex;gap:22px;flex-wrap:wrap}
+  nav a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.98rem;font-weight:500}
+  nav a:hover{color:var(--brass-lt)}
 
-  .night{
-    position:relative;z-index:2;text-align:center;padding:64px 22px 84px;
-    background:radial-gradient(120% 55% at 50% 0%,rgba(92,42,110,.55),transparent 62%);
-  }
-  .moon{position:relative;width:clamp(96px,26vw,132px);margin:0 auto 26px}
-  .moon::before{content:"";position:absolute;left:50%;top:50%;width:300%;height:300%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(236,218,170,.13) 0%,rgba(236,218,170,.04) 32%,transparent 62%)}
-  .moon svg{position:relative;display:block;width:100%;height:auto;opacity:.82;filter:drop-shadow(0 0 12px rgba(236,218,170,.2))}
-  .moon .sp{position:absolute;color:var(--gold);line-height:1;animation:tw 3.4s ease-in-out infinite}
-  .moon .s1{left:-52px;top:6px;font-size:1.1rem}
-  .moon .s2{right:-44px;top:44px;font-size:.8rem;animation-delay:1.2s}
-  .moon .s3{left:-30px;bottom:-4px;font-size:.7rem;animation-delay:2.1s}
-  .moon .s4{right:-70px;top:-6px;font-size:.65rem;animation-delay:.6s}
-  @keyframes tw{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
-  .cloud{position:absolute;height:20px;border-radius:50%;background:rgba(236,214,238,.22);filter:blur(7px);animation:drift 38s ease-in-out infinite alternate}
-  .c1{width:150px;left:-90px;top:62%}
-  .c2{width:110px;left:-30px;top:30%;animation-duration:50s;animation-delay:-14s;opacity:.7}
-  @keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(170px)}}
-  .kicker{font-style:italic;font-size:1.2rem;color:var(--gold);opacity:.9;max-width:26ch;margin:0 auto}
-  .greet{font-style:italic;font-weight:600;font-size:clamp(2.7rem,11vw,4.6rem);line-height:1.1;color:#f3dfb4;margin-top:30px;letter-spacing:.01em;text-shadow:0 0 26px rgba(232,205,150,.3)}
-  .name{
-    font-family:'Pinyon Script',cursive;font-weight:400;
-    font-size:clamp(3.6rem,17vw,6.4rem);line-height:1.1;margin:0 0 8px;
-    background:linear-gradient(100deg,#f3dfb4 0%,#fff7e0 22%,#eab3bb 48%,#f3dfb4 74%,#fff7e0 100%);
-    background-size:220% auto;animation:shimmer 10s linear infinite;
-    -webkit-background-clip:text;background-clip:text;color:transparent;
-    filter:drop-shadow(0 0 22px rgba(232,205,150,.28));
-  }
-  @keyframes shimmer{to{background-position:220% center}}
-  .date{display:flex;align-items:center;justify-content:center;gap:16px;font-style:italic;font-size:1.25rem;color:var(--gold)}
-  .date i{display:block;width:clamp(40px,14vw,90px);height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
-  .date i:last-child{transform:scaleX(-1)}
+  .hero{background:radial-gradient(90% 120% at 85% 0%,#3d1e44 0%,transparent 60%),var(--ink);color:var(--white);padding:150px 0 96px}
+  .hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:end}
+  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,9.5vw,6.4rem);line-height:.98;letter-spacing:-.025em;color:var(--white)}
+  .hero .role{margin-top:26px;font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.75rem);line-height:1.3;color:var(--brass-lt);max-width:20em}
+  .hero .lead{margin-top:18px;max-width:34em;color:rgba(255,255,255,.78)}
+  .hero .cta{display:inline-block;margin-top:30px;padding:13px 26px;background:var(--brass-lt);color:var(--ink);font-weight:600;text-decoration:none;border-radius:2px;transition:background .2s}
+  .hero .cta:hover{background:#fff}
+  .docket{border-left:2px solid var(--brass);padding-left:26px}
+  .docket div{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+  .docket div:last-child{border-bottom:0}
+  .docket dt{font-size:.88rem;color:var(--brass-lt)}
+  .docket dd{font-family:var(--serif);font-size:1.15rem;line-height:1.35;color:var(--white)}
+  .hero .wrap > *{animation:rise .9s ease both}
+  .hero .wrap > *:nth-child(2){animation-delay:.2s}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 
-  .heaven{
-    position:relative;max-width:440px;height:340px;margin:44px auto 0;overflow:hidden;border-radius:30px;
-    border:1px solid rgba(232,205,150,.28);
-    background:linear-gradient(180deg,rgba(110,62,140,.32) 0%,rgba(176,106,156,.26) 62%,rgba(240,172,172,.24) 100%);
-    box-shadow:inset 0 0 50px rgba(255,214,170,.08),0 18px 40px rgba(0,0,0,.3);
-  }
-  .heaven .tw{position:absolute;color:var(--gold);line-height:1;animation:tw 3.2s ease-in-out infinite}
-  .earth{position:absolute;left:-22%;right:-22%;bottom:-190px;height:250px;border-radius:50%;
-    background:radial-gradient(ellipse at 50% 0%,#4a2658 0%,#24122f 62%);
-    box-shadow:0 -3px 22px rgba(232,205,150,.4),inset 0 3px 0 rgba(232,205,150,.45)}
-  .lt{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffe3a6;box-shadow:0 0 6px 2px rgba(255,214,150,.65);animation:tw 3s ease-in-out infinite}
-  .cl{position:absolute;border-radius:50%;background:radial-gradient(ellipse at 50% 30%,rgba(255,242,247,.92),rgba(236,196,215,.7) 60%,rgba(200,150,190,.25));animation:cdrift 16s ease-in-out infinite alternate}
-  .cl1{width:230px;height:74px;left:-50px;bottom:34px}
-  .cl2{width:250px;height:82px;right:-60px;bottom:26px;animation-delay:-6s}
-  .cl3{width:170px;height:58px;left:110px;bottom:14px;opacity:.9;animation-delay:-11s}
-  @keyframes cdrift{from{transform:translateX(-12px)}to{transform:translateX(14px)}}
-  .ang{position:absolute;left:50%;top:0;width:150px;margin-left:-75px;opacity:0;transform:translate(0,-200px)}
-  .ang svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 0 16px rgba(255,236,200,.5))}
-  .heaven.go .ang{animation:descend 6.5s cubic-bezier(.3,.55,.3,1) forwards}
-  .heaven.go .ang svg{animation:hover 4.2s ease-in-out 6.5s infinite}
-  @keyframes descend{
-    0%{transform:translate(-46px,-200px) rotate(-9deg);opacity:0}
-    14%{opacity:1}
-    42%{transform:translate(38px,-60px) rotate(7deg);opacity:1}
-    72%{transform:translate(-16px,22px) rotate(-3deg);opacity:1}
-    100%{transform:translate(0,46px) rotate(0);opacity:1}
-  }
-  @keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-  .wl{transform-origin:90px 120px;animation:flapL 2.4s ease-in-out infinite alternate}
-  .wr{transform-origin:110px 120px;animation:flapR 2.4s ease-in-out infinite alternate}
-  @keyframes flapL{from{transform:rotate(5deg)}to{transform:rotate(-9deg)}}
-  @keyframes flapR{from{transform:rotate(-5deg)}to{transform:rotate(9deg)}}
-  .halo{animation:haloPulse 2.8s ease-in-out infinite;filter:drop-shadow(0 0 5px #ffe9a8)}
-  @keyframes haloPulse{0%,100%{opacity:.8}50%{opacity:1}}
-  .fth{position:absolute;top:18%;width:9px;height:22px;border-radius:50%;opacity:0;background:linear-gradient(180deg,#fff,#f7d9e4)}
-  .heaven.go .fth{animation:fall 9s linear infinite}
-  @keyframes fall{0%{opacity:0;transform:translate(0,0) rotate(0)}12%{opacity:.85}100%{opacity:0;transform:translate(var(--dx),240px) rotate(240deg)}}
-  .hcap{margin-top:26px;margin-bottom:6px;font-family:'Pinyon Script',cursive;font-size:clamp(2.1rem,8vw,2.8rem);line-height:1.2;color:#f3dfb4;text-shadow:0 0 20px rgba(232,205,150,.25)}
+  section{padding:88px 0}
+  section + section{border-top:1px solid var(--line)}
+  .head{display:grid;grid-template-columns:240px 1fr;gap:56px}
+  h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.15;color:var(--plum)}
+  .body p{max-width:38em;color:var(--ink-2)}
+  .body p + p{margin-top:18px}
+  .body p.first{color:var(--ink);font-family:var(--serif);font-size:1.35rem;line-height:1.5}
 
-  .sideAngels{position:fixed;inset:0;pointer-events:none;z-index:35;overflow:hidden}
-  .sa{position:absolute;top:0;width:clamp(58px,15vw,96px);animation:sadown 12s linear forwards}
-  .sa.l{left:1vw}.sa.r{right:1vw}
-  .sa svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 0 12px rgba(255,236,200,.55));animation:sasway 3.2s ease-in-out infinite alternate}
-  .sa.r svg{animation-direction:alternate-reverse}
-  @keyframes sadown{from{transform:translateY(-150px)}to{transform:translateY(calc(100vh + 30px))}}
-  @keyframes sasway{from{transform:translateX(-10px) rotate(-6deg)}to{transform:translateX(14px) rotate(6deg)}}
+  .roles{list-style:none;border-left:2px solid var(--line);margin-left:6px}
+  .roles li{position:relative;padding:0 0 38px 30px}
+  .roles li:last-child{padding-bottom:0}
+  .roles li::before{content:"";position:absolute;left:-7px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--brass)}
+  .roles h3{font-family:var(--serif);font-weight:500;font-size:1.35rem;line-height:1.3}
+  .roles .org{color:var(--plum);font-weight:600;margin-top:2px}
+  .roles p{margin-top:8px;max-width:36em;color:var(--ink-2)}
 
-  .vigil{
-    max-width:520px;margin:46px auto 0;padding:30px 14px 26px;border-radius:30px;
-    border:1px solid rgba(232,205,150,.32);
-    background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.015));
-    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  .areas{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+  .areas article{border-top:2px solid var(--plum);padding:22px 0 36px}
+  .areas h3{font-family:var(--serif);font-weight:500;font-size:1.3rem;margin-bottom:8px}
+  .areas p{color:var(--ink-2);max-width:26em}
+
+  .creds{list-style:none}
+  .creds li{padding:20px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .creds li:first-child{padding-top:0}
+  .creds strong{font-family:var(--serif);font-weight:500;font-size:1.25rem}
+  .creds span{color:var(--ink-2)}
+
+  .contact{background:var(--ink);color:var(--white);border-top:0}
+  .contact h2{color:var(--white)}
+  .contact .body p{color:rgba(255,255,255,.78)}
+  .contact .body p.first{color:#fff}
+  .links{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+  .links a{padding:12px 24px;border:1px solid var(--brass-lt);color:var(--brass-lt);text-decoration:none;font-weight:600;border-radius:2px;transition:background .2s,color .2s}
+  .links a:hover{background:var(--brass-lt);color:var(--ink)}
+
+  footer{background:#130c1c;color:rgba(255,255,255,.55);font-size:.92rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  @media (max-width:820px){
+    .hero{padding:130px 0 70px}
+    .hero .wrap,.head{grid-template-columns:1fr;gap:34px}
+    .areas{grid-template-columns:1fr}
+    section{padding:64px 0}
+    nav{gap:16px}
   }
-  .wt{font-weight:500;font-style:italic;font-size:clamp(1.25rem,4.4vw,1.55rem);line-height:1.35;color:var(--gold);padding:0 8px}
-  .pearls{display:flex;justify-content:center;gap:clamp(8px,3vw,16px);margin:20px 0 4px}
-  .pearls .u{text-align:center}
-  .pearl{
-    width:clamp(58px,17vw,72px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;color:var(--wine);
-    background:radial-gradient(circle at 32% 26%,#ffffff 0%,#fdf0f2 36%,#ecd0d9 100%);
-    box-shadow:0 0 0 1.5px rgba(232,205,150,.95),0 0 0 6px rgba(232,205,150,.12),0 12px 26px rgba(0,0,0,.4),inset 0 -7px 12px rgba(168,80,111,.22);
-  }
-  .pearl b{font-weight:600;font-size:clamp(1.45rem,5.4vw,1.85rem);font-variant-numeric:lining-nums tabular-nums;line-height:1}
-  .u span{display:block;margin-top:9px;font-style:italic;font-size:1rem;color:var(--gold);opacity:.9}
-  .wn{margin-top:10px;font-style:italic;font-size:1.1rem;color:var(--rose);padding:0 10px}
-  .story{max-width:30em;margin:10px auto 0;padding:0 14px;min-height:5.2em;font-style:italic;font-size:1.15rem;line-height:1.6;color:#f6e9cf}
-  .sep{width:70px;height:1px;margin:26px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-
-  .giftWrap{margin-top:60px}
-  .gift{background:none;border:none;cursor:pointer;color:inherit;animation:bob 3s ease-in-out infinite;position:relative}
-  .gift::before{content:"";position:absolute;left:50%;top:44%;width:230px;height:230px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(232,205,150,.3),transparent 66%)}
-  .gift svg{overflow:visible;position:relative;width:150px;height:150px;filter:drop-shadow(0 16px 24px rgba(0,0,0,.45))}
-  .gift p{position:relative;margin-top:10px;font-style:italic;font-size:1.25rem;color:var(--gold)}
-  @keyframes bob{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-10px) rotate(1.5deg)}}
-  .gift .lid{transform-origin:20% 100%;transition:transform .8s cubic-bezier(.3,1.5,.5,1)}
-  .opened .gift{animation:none}
-  .opened .gift .lid{transform:translate(20px,-48px) rotate(24deg)}
-  .opened .gift p{visibility:hidden}
-
-  #dawn{position:relative;z-index:2;opacity:0;transition:opacity 1.8s ease}
-  #dawn.show{opacity:1}
-  .horizon{
-    position:relative;overflow:hidden;min-height:540px;text-align:center;padding:92px 24px 0;
-    background:
-      radial-gradient(70% 50% at 50% 100%,rgba(255,226,180,.8),rgba(255,226,180,0) 72%),
-      linear-gradient(180deg,#170d22 0%,#3b1d4b 22%,#8a4768 50%,#d98f9b 76%,#f0c6bf 100%);
-  }
-  .horizon p{font-style:italic;font-size:clamp(1.3rem,4.6vw,1.65rem);line-height:1.5;color:#f6e6c4;max-width:24em;margin:0 auto}
-  .horizon p + p{margin-top:14px}
-  .sun{position:absolute;left:50%;bottom:-62px;width:130px;height:130px;margin-left:-65px;border-radius:50%;background:radial-gradient(circle,#fff7dc 0%,#ffdca0 45%,#ffbf86 100%);box-shadow:0 0 70px 26px rgba(255,214,160,.65)}
-
-  .paper{
-    color:var(--wine);padding:20px 22px 90px;
-    background:linear-gradient(180deg,#f0c6bf 0,#f8e2db 380px,#fcf3ee 880px,#fcf3ee 100%);
-  }
-  .letter{
-    position:relative;max-width:600px;margin:58px auto 0;padding:76px 30px 52px;text-align:center;
-    background:linear-gradient(180deg,#fffaf6,#fdf1ea);border-radius:4px;
-    box-shadow:0 34px 70px rgba(90,30,60,.2),0 2px 0 rgba(255,255,255,.8) inset;
-  }
-  .letter::before{content:"";position:absolute;inset:11px;border:1px solid rgba(185,138,75,.6);pointer-events:none}
-  .seal{
-    position:absolute;top:-36px;left:50%;transform:translateX(-50%);width:72px;height:72px;display:grid;place-items:center;
-    border-radius:50% 47% 52% 49% / 49% 52% 47% 51%;color:var(--gold);font-family:'Pinyon Script',cursive;font-size:2.6rem;line-height:1;padding-bottom:6px;
-    background:radial-gradient(circle at 34% 28%,#bf4666,#7d1f3d 62%,#561128);
-    box-shadow:0 8px 16px rgba(70,10,35,.45),inset 0 0 0 4px rgba(255,255,255,.08),inset 0 -5px 9px rgba(0,0,0,.28);
-  }
-  .letter h2{font-family:'Pinyon Script',cursive;font-weight:400;font-size:clamp(2.4rem,9vw,3.2rem);color:var(--rose-deep);line-height:1.2}
-  .letter .lede{margin:6px 0 28px;font-style:italic;font-size:1.15rem;color:var(--gold-ink)}
-  .poem{font-style:italic;font-weight:500;font-size:clamp(1.28rem,4.6vw,1.45rem);line-height:1.75;color:var(--wine)}
-  .stanza{margin-bottom:28px;opacity:0;transform:translateY(10px);transition:opacity 1.6s ease,transform 1.6s ease}
-  .stanza.in{opacity:1;transform:none}
-  .sign{font-family:'Pinyon Script',cursive;font-size:2.4rem;color:var(--rose-deep);margin-top:6px;line-height:1.2}
-  .wishline{margin-top:10px;font-style:italic;font-size:1.1rem;color:var(--wine-soft)}
-
-  .sec{max-width:600px;margin:84px auto 0;text-align:center}
-  .sec h3{font-style:italic;font-weight:500;font-size:clamp(1.9rem,6.4vw,2.5rem);line-height:1.2;color:var(--wine)}
-  .orn{position:relative;width:120px;height:1px;margin:16px auto 34px;background:linear-gradient(90deg,transparent,var(--gold-deep),transparent)}
-  .orn::after{content:"";position:absolute;left:50%;top:-4px;width:8px;height:8px;margin-left:-4px;background:var(--paper);border:1px solid var(--gold-deep);transform:rotate(45deg)}
-  .prose p{max-width:27em;margin:0 auto;font-size:1.32rem;line-height:1.7;color:var(--wine)}
-  .prose p + p::before{content:"";display:block;width:5px;height:5px;margin:24px auto;background:var(--gold-deep);transform:rotate(45deg);opacity:.8}
-  .prose.it p{font-style:italic;font-weight:500}
-
-  .noteBtn{
-    border:1px solid var(--gold-deep);background:linear-gradient(180deg,#fffaf6,#f9e6df);color:var(--wine);
-    font-style:italic;font-weight:500;font-size:1.3rem;padding:14px 34px;border-radius:999px;cursor:pointer;
-    box-shadow:0 10px 22px rgba(168,80,111,.2);transition:transform .2s,box-shadow .2s;
-  }
-  .noteBtn:hover{box-shadow:0 14px 28px rgba(168,80,111,.28)}
-  .noteBtn:active{transform:scale(.96)}
-  .slip{
-    max-width:440px;margin:26px auto 0;padding:24px 26px;min-height:92px;display:grid;place-items:center;
-    background:#fffaf6;border:1px solid rgba(185,138,75,.45);border-radius:3px;transform:rotate(-.8deg);
-    box-shadow:0 14px 30px rgba(90,30,60,.14);font-style:italic;font-weight:500;font-size:1.3rem;line-height:1.55;color:var(--wine);
-  }
-  .slip.swap{animation:swap .7s ease both}
-  @keyframes swap{from{opacity:0;transform:rotate(-.8deg) translateY(10px)}to{opacity:1;transform:rotate(-.8deg)}}
-
-  .finale .big{
-    font-family:'Pinyon Script',cursive;font-size:clamp(3rem,12.5vw,5rem);line-height:1.15;
-    background:linear-gradient(100deg,#7a2a52,#c06a85,#b98a4b,#c06a85,#7a2a52);
-    -webkit-background-clip:text;background-clip:text;color:transparent;
-  }
-  .finale p{max-width:24em;margin:16px auto 0;font-size:1.3rem;font-style:italic;color:var(--wine)}
-  .finale p.small{font-size:1.1rem;color:var(--wine-soft)}
-
-  #musicBtn{
-    position:fixed;top:14px;right:14px;z-index:60;display:none;cursor:pointer;
-    background:rgba(253,246,241,.92);border:1px solid var(--gold-deep);color:var(--wine);
-    padding:8px 16px;border-radius:999px;font-style:italic;font-size:1.05rem;
-    box-shadow:0 6px 18px rgba(0,0,0,.25);
-  }
-
-  footer{position:relative;z-index:2;text-align:center;padding:34px 20px 30px;background:#1b0e27;color:var(--gold);border-top:1px solid rgba(232,205,150,.55)}
-  .fe{font-size:1.4rem;letter-spacing:.3em}
-  .ff{margin-top:12px;font-family:'Pinyon Script',cursive;font-size:clamp(2rem,8vw,2.6rem);line-height:1.2;color:#f3dfb4;text-shadow:0 0 18px rgba(232,205,150,.3)}
-  .fs{margin-top:16px;font-size:.9rem;opacity:.55;font-style:italic}
-
-  #wishCap{position:fixed;left:0;right:0;top:38%;z-index:44;text-align:center;pointer-events:none;opacity:0;padding:0 20px}
-  #wishCap .a{font-family:'Pinyon Script',cursive;font-size:clamp(3rem,13vw,5.4rem);line-height:1.15;color:#fff3d6;text-shadow:0 0 28px rgba(232,205,150,.8),0 0 60px rgba(217,154,168,.55)}
-  #wishCap .b{margin-top:6px;font-style:italic;font-size:1.35rem;color:#f6e6c4;text-shadow:0 0 16px rgba(0,0,0,.45)}
-  #wishCap.show{animation:wishin 6s ease both}
-  @keyframes wishin{0%{opacity:0;transform:translateY(16px) scale(.96)}15%{opacity:1;transform:none}80%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-10px)}}
-  .hearBtn{margin-top:26px}
-  #fw{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:42}
-  .rv{opacity:0;transform:translateY(14px);transition:opacity 1.1s ease,transform 1.1s ease}
-  .rv.on{opacity:1;transform:none}
-  .sun{animation:sunpulse 5s ease-in-out infinite}
-  @keyframes sunpulse{0%,100%{box-shadow:0 0 70px 26px rgba(255,214,160,.6);transform:scale(1)}50%{box-shadow:0 0 96px 40px rgba(255,214,160,.8);transform:scale(1.05)}}
-  .horizon .hs{position:absolute;color:#fff3d6;line-height:1;animation:tw 3.4s ease-in-out infinite}
-  .finale .big{background-size:220% auto;animation:shimmer 9s linear infinite}
-  .seal{animation:sealglow 4s ease-in-out infinite}
-  @keyframes sealglow{0%,100%{box-shadow:0 8px 16px rgba(70,10,35,.45),inset 0 0 0 4px rgba(255,255,255,.08),inset 0 -5px 9px rgba(0,0,0,.28),0 0 0 rgba(232,205,150,0)}50%{box-shadow:0 8px 16px rgba(70,10,35,.45),inset 0 0 0 4px rgba(255,255,255,.08),inset 0 -5px 9px rgba(0,0,0,.28),0 0 26px rgba(232,205,150,.7)}}
-
   @media (prefers-reduced-motion:reduce){
-    *{animation:none!important;transition-duration:.01ms!important}
-    .ang{opacity:1;transform:translate(0,46px)}
+    html{scroll-behavior:auto}
+    *{animation:none!important;transition:none!important}
   }
 </style>
 </head>
 <body>
-<canvas id="stars"></canvas>
-<canvas id="petals"></canvas>
-<canvas id="fw" aria-hidden="true"></canvas>
-<div id="wishCap" aria-hidden="true"><div class="a">Happy Birthday, Pari</div><div class="b">may all your wishes come true ✨</div></div>
-<div class="balloons" id="balloons"></div>
-<div class="sideAngels" id="sideAngels" aria-hidden="true"></div>
-<button id="musicBtn" type="button">♪ Music on</button>
 
-<main class="night">
-  <div class="moon" aria-hidden="true">
-    <svg viewBox="0 0 100 100"><defs>
-      <radialGradient id="mg" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#f1e6c6"/><stop offset=".55" stop-color="#dcc99a"/><stop offset="1" stop-color="#b9a06a"/></radialGradient>
-      <mask id="cm"><rect width="100" height="100" fill="#fff"/><circle cx="70" cy="40" r="35" fill="#000"/></mask>
-    </defs><circle cx="46" cy="52" r="35" fill="url(#mg)" mask="url(#cm)"/></svg>
-    <span class="sp s1">✦</span><span class="sp s2">✦</span><span class="sp s3">✦</span><span class="sp s4">✦</span>
-    <span class="cloud c1"></span><span class="cloud c2"></span>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Parikshita Mathur</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
-  <p class="kicker">Tonight, the sky is holding its breath for you.</p>
-  <p class="greet">Happy Birthday</p>
-  <h1 class="name">Pari</h1>
-  <p class="date"><i></i>6 October<i></i></p>
+</header>
 
-  <section class="heaven" id="heaven" aria-label="Pari, the angel, coming down from the sky">
-    <span class="tw" style="left:12%;top:12%;font-size:.9rem">✦</span>
-    <span class="tw" style="left:84%;top:18%;font-size:.7rem;animation-delay:1s">✦</span>
-    <span class="tw" style="left:72%;top:44%;font-size:.6rem;animation-delay:1.8s">✦</span>
-    <span class="tw" style="left:22%;top:50%;font-size:.65rem;animation-delay:2.4s">✦</span>
-    <div class="earth"></div>
-    <i class="lt" style="left:30%;bottom:34px"></i><i class="lt" style="left:38%;bottom:26px;animation-delay:.7s"></i>
-    <i class="lt" style="left:47%;bottom:38px;animation-delay:1.4s"></i><i class="lt" style="left:56%;bottom:28px;animation-delay:2s"></i>
-    <i class="lt" style="left:65%;bottom:36px;animation-delay:.4s"></i><i class="lt" style="left:71%;bottom:24px;animation-delay:1.1s"></i>
-    <div class="cl cl1"></div><div class="cl cl2"></div><div class="cl cl3"></div>
-    <i class="fth" style="left:44%;--dx:-26px;animation-delay:.5s"></i>
-    <i class="fth" style="left:56%;--dx:30px;animation-delay:2.6s"></i>
-    <i class="fth" style="left:50%;--dx:-12px;animation-delay:4.8s"></i>
-    <i class="fth" style="left:40%;--dx:22px;animation-delay:6.6s"></i>
-    <div class="ang">
-      <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <linearGradient id="fw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5d6e3"/></linearGradient>
-          <linearGradient id="fgo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1d1de"/></linearGradient>
-          <radialGradient id="fsk" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#fff2e9"/><stop offset="1" stop-color="#f6c9bb"/></radialGradient>
-          <linearGradient id="fgd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f8e8bb"/><stop offset="1" stop-color="#c9a15c"/></linearGradient>
-          <radialGradient id="aura" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="rgba(255,236,196,.45)"/><stop offset="1" stop-color="rgba(255,236,196,0)"/></radialGradient>
-        </defs>
-        <circle cx="100" cy="125" r="98" fill="url(#aura)"/>
-        <g class="wl"><g transform="translate(90 120)">
-          <ellipse cx="0" cy="-32" rx="13" ry="34" transform="rotate(-132)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-40" rx="13" ry="42" transform="rotate(-110)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-46" rx="13" ry="48" transform="rotate(-88)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-44" rx="13" ry="46" transform="rotate(-66)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-36" rx="13" ry="38" transform="rotate(-44)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-        </g></g>
-        <g class="wr"><g transform="translate(110 120)">
-          <ellipse cx="0" cy="-32" rx="13" ry="34" transform="rotate(132)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-40" rx="13" ry="42" transform="rotate(110)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-46" rx="13" ry="48" transform="rotate(88)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-44" rx="13" ry="46" transform="rotate(66)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-          <ellipse cx="0" cy="-36" rx="13" ry="38" transform="rotate(44)" fill="url(#fw)" stroke="rgba(214,170,110,.55)" stroke-width="1"/>
-        </g></g>
-        <path d="M84 112 C82 134 70 172 62 206 Q100 224 138 206 C130 172 118 134 116 112 Q100 121 84 112 Z" fill="url(#fgo)" stroke="rgba(214,170,110,.4)" stroke-width="1"/>
-        <path d="M83 140 Q100 150 117 140 L116 148 Q100 158 84 148 Z" fill="url(#fgd)"/>
-        <ellipse cx="87" cy="215" rx="7" ry="4.2" fill="url(#fsk)"/><ellipse cx="113" cy="215" rx="7" ry="4.2" fill="url(#fsk)"/>
-        <path d="M86 119 Q80 138 98 145" stroke="#fbe6ee" stroke-width="10" stroke-linecap="round" fill="none"/>
-        <path d="M114 119 Q120 138 102 145" stroke="#fbe6ee" stroke-width="10" stroke-linecap="round" fill="none"/>
-        <circle cx="100" cy="145" r="5.5" fill="url(#fsk)"/>
-        <ellipse cx="100" cy="92" rx="30" ry="29" fill="#4a2a3a"/>
-        <circle cx="71" cy="106" r="8.5" fill="#4a2a3a"/><circle cx="129" cy="106" r="8.5" fill="#4a2a3a"/>
-        <circle cx="75" cy="99" r="3.6" fill="url(#fgd)"/><circle cx="125" cy="99" r="3.6" fill="url(#fgd)"/>
-        <circle cx="100" cy="95" r="25.5" fill="url(#fsk)"/>
-        <path d="M75 93 C73 66 127 66 125 93 C118 80 109 75 100 77 C91 75 82 80 75 93 Z" fill="#4a2a3a"/>
-        <path d="M87 98 Q92 91.5 97 98" stroke="#4a2a3a" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-        <path d="M103 98 Q108 91.5 113 98" stroke="#4a2a3a" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-        <ellipse cx="84" cy="106" rx="6" ry="3.6" fill="#f49ab0" opacity=".65"/><ellipse cx="116" cy="106" rx="6" ry="3.6" fill="#f49ab0" opacity=".65"/>
-        <path d="M95 108 Q100 113 105 108" stroke="#b04a63" stroke-width="2" stroke-linecap="round" fill="none"/>
-        <ellipse class="halo" cx="100" cy="58" rx="22" ry="6.5" fill="none" stroke="url(#fgd)" stroke-width="3.6"/>
-      </svg>
-    </div>
-  </section>
-  <p class="hcap" id="hcap">Pari is coming, as an angel</p>
-
-  <section class="vigil" aria-label="Birthday countdowns">
-    <div class="watch">
-      <h2 class="wt">Your birthday begins at midnight ✨</h2>
-      <div class="pearls" id="cd1">
-        <div class="u"><div class="pearl"><b id="ad">0</b></div><span>days</span></div>
-        <div class="u"><div class="pearl"><b id="ah">00</b></div><span>hours</span></div>
-        <div class="u"><div class="pearl"><b id="am">00</b></div><span>minutes</span></div>
-        <div class="u"><div class="pearl"><b id="as">00</b></div><span>seconds</span></div>
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Parikshita Mathur</h1>
+        <p class="role">Group Legal Head. Corporate litigator. Certified Fraud Examiner.</p>
+        <p class="lead">A litigator with 12+ years of experience, including before the Delhi High Court and the Supreme Court of India. She leads legal at Caparo India and focuses on corporate disputes and white-collar crime.</p>
+        <a class="cta" href="#contact">Get in touch</a>
       </div>
-      <p class="wn" id="n1"></p>
+      <dl class="docket">
+        <div><dt>Current role</dt><dd>Group Legal Head, Caparo India</dd></div>
+        <div><dt>Board position</dt><dd>Director, Ayatti by Caparo (Caparo India Limited)</dd></div>
+        <div><dt>Practice focus</dt><dd>Corporate litigation, dispute resolution, white-collar crime</dd></div>
+        <div><dt>Litigation experience</dt><dd>Delhi High Court and Supreme Court of India</dd></div>
+      </dl>
     </div>
+  </div>
 
-    <div class="sep"></div>
-
-    <div class="watch">
-      <h2 class="wt">A little angel arrives at 3:33 in the morning 🌙</h2>
-      <div class="pearls" id="cd2">
-        <div class="u"><div class="pearl"><b id="bd">0</b></div><span>days</span></div>
-        <div class="u"><div class="pearl"><b id="bh">00</b></div><span>hours</span></div>
-        <div class="u"><div class="pearl"><b id="bm">00</b></div><span>minutes</span></div>
-        <div class="u"><div class="pearl"><b id="bs">00</b></div><span>seconds</span></div>
+  <section id="about">
+    <div class="wrap head">
+      <h2>About</h2>
+      <div class="body">
+        <p class="first">Parikshita Mathur is a disputes lawyer who pairs courtroom experience with a forensic approach to evidence.</p>
+        <p>Over 12 years she has built a practice across litigation, investigations and forensics, including appearances before the Delhi High Court and the Supreme Court of India. Her work today is mainly corporate litigation and corporate dispute resolution.</p>
+        <p>She is Group Legal Head at Caparo India and a Director of Ayatti by Caparo. She holds an LL.M. and is a Certified Fraud Examiner, which shapes how she handles white-collar crime: identify the issue early, build the record carefully, and act on the evidence.</p>
       </div>
-      <p class="story" id="story"></p>
     </div>
   </section>
 
-  <div class="giftWrap" id="giftWrap">
-    <button class="gift" id="gift" type="button" aria-label="Open your gift">
-      <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <linearGradient id="gb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0c4cb"/><stop offset="1" stop-color="#bf7487"/></linearGradient>
-          <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7d4d8"/><stop offset="1" stop-color="#cc8394"/></linearGradient>
-          <linearGradient id="rb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f6e4b4"/><stop offset="1" stop-color="#c9a15c"/></linearGradient>
-        </defs>
-        <rect x="22" y="72" width="116" height="74" rx="8" fill="url(#gb)"/>
-        <rect x="72" y="72" width="16" height="74" fill="url(#rb)"/>
-        <g class="lid">
-          <rect x="14" y="52" width="132" height="26" rx="8" fill="url(#gl)"/>
-          <rect x="72" y="52" width="16" height="26" fill="url(#rb)"/>
-          <path d="M80 52 C60 22 30 30 52 50 Z" fill="url(#rb)"/>
-          <path d="M80 52 C100 22 130 30 108 50 Z" fill="url(#rb)"/>
-          <circle cx="80" cy="52" r="8" fill="#c9a15c"/>
-        </g>
-      </svg>
-      <p>Open when you're ready 🎁</p>
-    </button>
-  </div>
+  <section id="experience">
+    <div class="wrap head">
+      <h2>Experience</h2>
+      <ol class="roles">
+        <li>
+          <h3>Group Legal Head</h3>
+          <div class="org">Caparo India</div>
+          <p>Heads the legal function for the group. Her work is mainly corporate litigation and dispute resolution.</p>
+        </li>
+        <li>
+          <h3>Director</h3>
+          <div class="org">Ayatti by Caparo (Caparo India Limited)</div>
+          <p>Sits on the board and brings a legal and risk perspective to the company's decisions.</p>
+        </li>
+        <li>
+          <h3>Litigation</h3>
+          <div class="org">Delhi High Court and Supreme Court of India</div>
+          <p>Litigated before the Delhi High Court and the Supreme Court of India, and worked on investigations and forensic matters.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="wrap head">
+      <h2>Expertise</h2>
+      <div class="areas">
+        <article>
+          <h3>Corporate litigation</h3>
+          <p>Representing companies in commercial and corporate disputes, including before the High Court and the Supreme Court.</p>
+        </article>
+        <article>
+          <h3>Corporate dispute resolution</h3>
+          <p>Choosing the route that best protects the business, whether that is court proceedings or a settlement.</p>
+        </article>
+        <article>
+          <h3>White-collar crime</h3>
+          <p>Fraud, financial misconduct and economic offences, from the first inquiry through to proceedings.</p>
+        </article>
+        <article>
+          <h3>Investigations and fraud examination</h3>
+          <p>Careful fact-finding, properly documented and built to hold up before a court or regulator.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="credentials">
+    <div class="wrap head">
+      <h2>Credentials</h2>
+      <ul class="creds">
+        <li><strong>Certified Fraud Examiner (CFE)</strong><span>Association of Certified Fraud Examiners</span></li>
+        <li><strong>Master of Laws (LL.M.)</strong><span>Postgraduate law degree</span></li>
+        <li><strong>Bachelor of Laws (LL.B.)</strong><span>Law degree</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap head">
+      <h2>Contact</h2>
+      <div class="body">
+        <p class="first">To discuss a corporate dispute, an investigation or a white-collar matter, write to Parikshita.</p>
+        <p>Please include a short summary of the issue and any deadlines.</p>
+        <div class="links">
+          <!-- TODO: replace with Parikshita's real email and LinkedIn URL -->
+          <a href="mailto:your-email@example.com">Email Parikshita</a>
+          <a href="https://www.linkedin.com/in/your-profile" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<div id="dawn" hidden>
-  <section class="horizon" id="horizon">
-    <p>And then, as it always does, the night gave way.</p>
-    <p>Because someone like you does not arrive in darkness. You arrive, and the dark makes room.</p>
-    <span class="hs" style="left:14%;top:14%;font-size:.9rem">✦</span>
-    <span class="hs" style="left:86%;top:20%;font-size:.7rem;animation-delay:1s">✦</span>
-    <span class="hs" style="left:26%;top:38%;font-size:.6rem;animation-delay:1.8s">✦</span>
-    <span class="hs" style="left:76%;top:46%;font-size:.65rem;animation-delay:2.4s">✦</span>
-    <div class="sun"></div>
-  </section>
-
-  <div class="paper">
-    <section class="letter" id="card">
-      <div class="seal" aria-hidden="true">P</div>
-      <h2>Our dearest Pari,</h2>
-      <p class="lede">a few words, written slowly, just for you</p>
-      <div class="poem">
-        <p class="stanza">A little sparkle, a heart so true,<br>The world grew softer when it met you.<br>Your kindness enters before you speak<br>And leaves a warmth in the hearts you seek.</p>
-        <p class="stanza">You carry no mask and you keep no score,<br>You simply give, then give some more.<br>A gentle soul with a courage rare,<br>Who makes the heaviest day feel fair.</p>
-        <p class="stanza">So here's to your laughter, here's to your grace,<br>To the quiet strength in your smiling face.<br>If goodness ever needed a name,<br>It would answer to yours, and be glad it came.</p>
-        <p class="stanza">May this new year bring you all you're due,<br>Every joy that's been waiting for you.<br>Best of hearts and best of souls,<br>You make the world feel whole.</p>
-        <p class="stanza">Happy Birthday, Pari.<br>The best girl in the world has her day,<br>and the world is lucky that you came its way.</p>
-      </div>
-      <div class="sign">With all our warmth</div>
-      <p class="wishline">May every day of this year feel like today. 🤍</p>
-    </section>
-
-    <section class="sec">
-      <h3>Things we hope you never forget</h3><div class="orn"></div>
-      <div class="prose">
-        <p>Your kindness never announces itself. It simply arrives, quietly, the way light enters a room, and suddenly everything is easier to look at.</p>
-        <p>You listen in a way that makes people feel like the only story in the room.</p>
-        <p>There is a softness in you that the world has tried to test, and has never once managed to take.</p>
-        <p>Your laughter gives other people permission to be happy too.</p>
-        <p>You are elegant without effort and gentle without ever being small. Strength, in you, wears a silk glove.</p>
-        <p>To know you is to understand that goodness is not an idea. It is a person, and her name is Pari.</p>
-      </div>
-    </section>
-
-    <section class="sec">
-      <h3>Our wishes for your year ahead</h3><div class="orn"></div>
-      <div class="prose it">
-        <p>May the year be as gentle with you as you have always been with everyone else.</p>
-        <p>May every dream you have kept folded in your heart find a window, and open.</p>
-        <p>May you be loved loudly, and never once have to ask for it.</p>
-        <p>May your mornings be unhurried, your evenings golden, and your sleep the deep kind that only a peaceful heart earns.</p>
-        <p>May you finally meet your own reflection and see what the rest of us have always seen.</p>
-      </div>
-    </section>
-
-    <section class="sec">
-      <h3>A little note, just for you 💌</h3><div class="orn"></div>
-      <button class="noteBtn" id="noteBtn" type="button">Open a note</button>
-      <div class="slip" id="slip" aria-live="polite">Go on. You have earned every one of these.</div>
-    </section>
-
-    <section class="sec finale">
-      <div class="big">Happy Birthday, Pari</div>
-      <p>Today the whole world is celebrating you. It is only returning the favour. 🤍</p>
-      <p class="small">Now go, eat the cake, and be thoroughly adored. 🎂</p>
-    </section>
-  </div>
-</div>
-
 <footer>
-  <div class="fe">🎈 🎂 🎀 🤍 ✨</div>
-  <p class="ff">From your family and friends</p>
-  <p class="fs">Coming soon: Pari, The Portfolio</p>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Parikshita Mathur. All rights reserved.</span>
+    <span>Delhi, India</span>
+  </div>
 </footer>
 
-<script>
-const $=id=>document.getElementById(id);
-const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-(function(){
-  const c=$('stars'),x=c.getContext('2d');
-  let st=[],shoot=null;
-  function size(){
-    c.width=innerWidth;c.height=innerHeight;
-    st=Array.from({length:Math.round(innerWidth*innerHeight/8500)},()=>({x:Math.random()*c.width,y:Math.random()*c.height,r:.4+Math.random()*1.2,p:Math.random()*6.28,s:.008+Math.random()*.022,big:Math.random()<.07}));
-  }
-  size();addEventListener('resize',size);
-  function spark(t){
-    const L=5+t.r*3;x.beginPath();
-    x.moveTo(t.x-L,t.y);x.quadraticCurveTo(t.x,t.y,t.x,t.y-L);x.quadraticCurveTo(t.x,t.y,t.x+L,t.y);
-    x.quadraticCurveTo(t.x,t.y,t.x,t.y+L);x.quadraticCurveTo(t.x,t.y,t.x-L,t.y);x.fill();
-  }
-  function draw(){
-    x.clearRect(0,0,c.width,c.height);
-    st.forEach(t=>{
-      t.p+=t.s;x.globalAlpha=.25+.7*Math.abs(Math.sin(t.p));x.fillStyle='#fff3d6';
-      if(t.big){spark(t)}else{x.beginPath();x.arc(t.x,t.y,t.r,0,6.28);x.fill();}
-    });
-    if(!reduce){
-      if(!shoot&&Math.random()<.0018){const sx=Math.random()*c.width*.7+c.width*.2;shoot={x:sx,y:Math.random()*c.height*.25,vx:-7-Math.random()*3,vy:3.5+Math.random()*2,life:55};}
-      if(shoot){
-        const g=x.createLinearGradient(shoot.x,shoot.y,shoot.x-shoot.vx*9,shoot.y-shoot.vy*9);
-        g.addColorStop(0,'rgba(255,244,214,'+Math.min(1,shoot.life/30)+')');g.addColorStop(1,'rgba(255,244,214,0)');
-        x.globalAlpha=1;x.strokeStyle=g;x.lineWidth=1.6;x.lineCap='round';
-        x.beginPath();x.moveTo(shoot.x,shoot.y);x.lineTo(shoot.x-shoot.vx*9,shoot.y-shoot.vy*9);x.stroke();
-        shoot.x+=shoot.vx;shoot.y+=shoot.vy;if(--shoot.life<=0)shoot=null;
-      }
-      requestAnimationFrame(draw);
-    }
-  }
-  draw();
-})();
-
-/* two countdowns: midnight and 3:33 AM (India time). Preview: add ?now=2026-10-05T23:55:00 */
-const fake=new URLSearchParams(location.search).get('now');
-const offset=fake?(new Date(fake)-new Date()):0;
-const nowD=()=>new Date(Date.now()+offset);
-const T1=new Date('2026-10-06T00:00:00+05:30');
-const T2=new Date('2026-10-06T03:33:00+05:30');
-const END=new Date('2026-10-07T00:00:00+05:30');
-function fill(p,sec){
-  const d=Math.floor(sec/86400);sec%=86400;
-  const h=Math.floor(sec/3600);sec%=3600;
-  const m=Math.floor(sec/60),s=sec%60;
-  $(p+'d').textContent=d;
-  $(p+'h').textContent=String(h).padStart(2,'0');
-  $(p+'m').textContent=String(m).padStart(2,'0');
-  $(p+'s').textContent=String(s).padStart(2,'0');
-}
-function storyFor(sec){
-  if(sec>86400) return "Once upon a time, on the morning of the 6th of October, a very special little girl was getting ready to meet the world. The stars have already gathered to watch.";
-  if(sec>10800) return "The night grows quiet. Somewhere, a family holds hands and counts the hours for a very small hello.";
-  if(sec>3600)  return "The lights are low, and everyone is smiling and waiting, wondering what she will look like.";
-  if(sec>600)   return "Tiny fingers, a tiny heart, and a whole lot of nervous giggles in the waiting room. She is on her way.";
-  if(sec>180)   return "Almost time. Everyone leans in, because a very special baby is about to be born.";
-  return "Hold your breath. Any second now, a little angel named Pari is about to say hello to the world. ✨";
-}
-function tick(){
-  const now=nowD();
-  const s1=Math.floor((T1-now)/1000), s2=Math.floor((T2-now)/1000);
-  if(s1>0){
-    fill('a',s1);$('cd1').style.display='flex';
-    $('n1').textContent= s1<=300 ? "Almost midnight. Close your eyes and make a wish. ✨" : "until your day begins";
-  }else{
-    $('cd1').style.display='none';
-    $('n1').textContent= now<END ? "It is the 6th of October. Happy birthday, Pari. 🤍" : "I hope the day was as lovely as you are. 🤍";
-  }
-  if(s2>0){
-    fill('b',s2);$('cd2').style.display='flex';$('story').textContent=storyFor(s2);
-  }else{
-    $('cd2').style.display='none';
-    $('hcap').textContent="Pari has arrived";
-    $('story').textContent="At 3:33 in the morning, the world received its sunshine. Pari arrived, and everything became softer, and a little sweeter. 🤍";
-  }
-}
-tick();setInterval(tick,1000);
-
-(function(){
-  const h=$('heaven');
-  if('IntersectionObserver' in window && !reduce){
-    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){h.classList.add('go');io.disconnect();}}),{threshold:.3});
-    io.observe(h);
-  }else{h.classList.add('go');h.style.setProperty('--static','1');}
-})();
-
-const pc=$('petals'),px=pc.getContext('2d');
-function rs(){pc.width=innerWidth;pc.height=innerHeight}rs();addEventListener('resize',rs);
-let bits=[];
-const pcols=['#f2b8c4','#e8cd96','#fde4e4','#d98a9d','#ffffff','#f6dca6'];
-function burst(n,ox,oy){
-  for(let i=0;i<n;i++){
-    const a=Math.random()*Math.PI*2,v=3+Math.random()*7;
-    bits.push({x:ox,y:oy,vx:Math.cos(a)*v,vy:Math.sin(a)*v-5,w:4+Math.random()*4,h:2+Math.random()*3,r:Math.random()*6,vr:(Math.random()-.5)*.25,c:pcols[i%pcols.length],life:210,ph:Math.random()*6});
-  }
-}
-(function loop(){
-  px.clearRect(0,0,pc.width,pc.height);
-  bits=bits.filter(b=>b.life>0&&b.y<pc.height+30);
-  bits.forEach(b=>{
-    b.vy+=.1;b.vx*=.985;b.vy*=.99;b.vx+=Math.sin(b.life/9+b.ph)*.04;
-    b.x+=b.vx;b.y+=b.vy;b.r+=b.vr;b.life--;
-    px.save();px.translate(b.x,b.y);px.rotate(b.r);px.globalAlpha=Math.min(1,b.life/60);px.fillStyle=b.c;
-    px.beginPath();px.ellipse(0,0,b.w,b.h,0,0,6.28);px.fill();px.restore();
-  });
-  requestAnimationFrame(loop);
-})();
-
-/* ---------- soft gold and rose fireworks ---------- */
-const fc=$('fw'),fx=fc.getContext('2d');
-function fsz(){fc.width=innerWidth;fc.height=innerHeight}fsz();addEventListener('resize',fsz);
-let fp=[],fr=[],fRun=false;
-const fpal=[['#ffe9b0','#f3c77a'],['#ffd1dc','#ee8fa8'],['#fff5e6','#f4d9d3'],['#e8cd96','#ffffff'],['#f6c1d0','#c9a5e8']];
-function launch(tx,ty,kind){
-  fr.push({x:tx+(Math.random()-.5)*90,y:fc.height+10,tx,ty,kind,pal:kind==='heart'?fpal[1]:fpal[Math.floor(Math.random()*fpal.length)]});
-  fgo();
-}
-function spawn(x,y,vx,vy,c,life,size){fp.push({x,y,vx,vy,c,life,max:life,size,ph:Math.random()*6});}
-function explode(x,y,kind,pal){
-  if(kind==='heart'){
-    for(let i=0;i<64;i++){
-      const t=i/64*Math.PI*2,hx=16*Math.pow(Math.sin(t),3),hy=-(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t));
-      spawn(x,y,hx*.2,hy*.2,pal[i%2],95,2.1);
-    }
-  }else if(kind==='ring'){
-    for(let i=0;i<54;i++){const a=i/54*Math.PI*2;spawn(x,y,Math.cos(a)*4.2,Math.sin(a)*4.2,pal[i%2],85,2);}
-    for(let i=0;i<14;i++){const a=Math.random()*6.28,v=Math.random()*1.6;spawn(x,y,Math.cos(a)*v,Math.sin(a)*v,'#fff7e0',60,1.6);}
-  }else{
-    for(let i=0;i<46;i++){const a=i/46*Math.PI*2+Math.random()*.08,v=4.4+Math.random()*.6;spawn(x,y,Math.cos(a)*v,Math.sin(a)*v,pal[0],90,2.1);}
-    for(let i=0;i<30;i++){const a=i/30*Math.PI*2+.1,v=2.4+Math.random()*.5;spawn(x,y,Math.cos(a)*v,Math.sin(a)*v,pal[1],80,1.9);}
-    for(let i=0;i<14;i++){const a=Math.random()*6.28,v=1+Math.random()*3;spawn(x,y,Math.cos(a)*v,Math.sin(a)*v,'#ffffff',110,1.3);}
-  }
-}
-function fgo(){if(fRun)return;fRun=true;requestAnimationFrame(floop);}
-function floop(){
-  fx.globalCompositeOperation='destination-out';fx.fillStyle='rgba(0,0,0,.2)';fx.fillRect(0,0,fc.width,fc.height);
-  fx.globalCompositeOperation='lighter';
-  fr=fr.filter(r=>{
-    r.x+=(r.tx-r.x)*.04;r.y-=11;
-    fx.globalAlpha=.9;fx.fillStyle='#ffe9b0';fx.beginPath();fx.arc(r.x,r.y,2,0,6.28);fx.fill();
-    if(r.y<=r.ty){explode(r.x,r.y,r.kind,r.pal);return false;}
-    return true;
-  });
-  fp=fp.filter(p=>{
-    p.vx*=.972;p.vy=p.vy*.972+.04;p.x+=p.vx;p.y+=p.vy;p.life--;
-    const k=Math.max(0,p.life/p.max);
-    fx.globalAlpha=k*(.65+.35*Math.sin(p.life*.5+p.ph));fx.fillStyle=p.c;
-    fx.beginPath();fx.arc(p.x,p.y,p.size*(.5+k*.5),0,6.28);fx.fill();
-    return p.life>0;
-  });
-  if(!fr.length&&!fp.length){fx.globalCompositeOperation='source-over';fx.clearRect(0,0,fc.width,fc.height);fRun=false;return;}
-  requestAnimationFrame(floop);
-}
-function fireworkShow(plan){
-  if(reduce)return;
-  plan.forEach(([d,xr,yr,k])=>setTimeout(()=>launch(innerWidth*xr,innerHeight*yr,k),d));
-}
-
-/* ---------- gentle fade-up reveals in the dawn ---------- */
-(function(){
-  if(reduce||!('IntersectionObserver' in window))return;
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}}),{threshold:.2,rootMargin:'0px 0px -6% 0px'});
-  document.querySelectorAll('.letter h2,.lede,.sign,.wishline,.sec h3,.orn,.prose p,.finale .big,.finale p').forEach(el=>{el.classList.add('rv');io.observe(el);});
-})();
-
-const bcols=['#f2b8c4','#e8cd96','#e4cdf0','#f8d9c0'];
-function balloons(n){
-  const box=$('balloons');
-  for(let i=0;i<n;i++){
-    const b=document.createElement('div');b.className='balloon';
-    const col=bcols[i%bcols.length];
-    b.style.background=`radial-gradient(circle at 35% 30%,#ffffffcc 0%,${col} 48%,${col} 100%)`;
-    b.style.left=(i%2?1+Math.random()*4:93+Math.random()*3)+'vw';
-    b.style.animationDuration=(9+Math.random()*3)+'s';
-    b.style.animationDelay=(i*.7)+'s';
-    box.appendChild(b);
-    setTimeout(()=>b.remove(),16000);
-  }
-}
-
-let ac=null,musicOn=false,timer=null;
-const N={G4:392,A4:440,B4:493.88,C5:523.25,D5:587.33,E5:659.25,F5:698.46,G5:783.99};
-const tune=[['G4',.75],['G4',.25],['A4',1],['G4',1],['C5',1],['B4',2],
-            ['G4',.75],['G4',.25],['A4',1],['G4',1],['D5',1],['C5',2],
-            ['G4',.75],['G4',.25],['G5',1],['E5',1],['C5',1],['B4',1],['A4',2],
-            ['F5',.75],['F5',.25],['E5',1],['C5',1],['D5',1],['C5',3]];
-function chime(f,t,d){
-  [[1,.15],[2,.05],[3.01,.02]].forEach(([m,amp])=>{
-    const o=ac.createOscillator(),g=ac.createGain();
-    o.type='sine';o.frequency.value=f*m;
-    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(amp,t+.012);g.gain.exponentialRampToValueAtTime(.0008,t+d+.9);
-    o.connect(g).connect(ac.destination);o.start(t);o.stop(t+d+1);
-  });
-}
-function playTune(){
-  if(!ac||!musicOn)return;
-  const beat=.6;let t=ac.currentTime+.08;
-  tune.forEach(([n,d])=>{chime(N[n],t,d*beat*.6);t+=d*beat;});
-  let gap=3;
-  if(!wished){
-    wished=true;gap=11;
-    setTimeout(()=>sayWish(false),(t-ac.currentTime+.2)*1000);
-  }
-  timer=setTimeout(playTune,(t-ac.currentTime+gap)*1000);
-}
-let wished=false,capT=null;
-function sparkleChime(){
-  if(!ac)return;
-  const t0=ac.currentTime+.05;
-  [1046.5,1318.5,1568,2093,1568,2637].forEach((f,i)=>chime(f,t0+i*.13,.35));
-}
-function sayWish(force){
-  if(!ac||(!musicOn&&!force))return;
-  sparkleChime();
-  const cap=$('wishCap');cap.classList.remove('show');void cap.offsetWidth;cap.classList.add('show');
-  clearTimeout(capT);capT=setTimeout(()=>cap.classList.remove('show'),6200);
-  burst(36,innerWidth/2,innerHeight*.5);
-  launch(innerWidth*.5,innerHeight*.26,'heart');
-}
-const mBtn=$('musicBtn');
-function setMusic(on){
-  musicOn=on;mBtn.textContent=on?'♪ Music on':'♪ Music off';
-  clearTimeout(timer);if(on)playTune();
-}
-mBtn.addEventListener('click',()=>setMusic(!musicOn));
-
-const stz=document.querySelectorAll('.stanza');
-if('IntersectionObserver' in window && !reduce){
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.4});
-  stz.forEach(s=>io.observe(s));
-}else{stz.forEach(s=>s.classList.add('in'));}
-
-let opened=false;
-$('gift').addEventListener('click',()=>{
-  if(opened)return;opened=true;
-  $('giftWrap').classList.add('opened');
-  const r=$('gift').getBoundingClientRect();
-  burst(90,r.left+r.width/2,r.top+r.height/3);
-  setTimeout(()=>burst(50,innerWidth*.2,innerHeight*.4),400);
-  setTimeout(()=>burst(50,innerWidth*.8,innerHeight*.4),700);
-  balloons(4);
-  fireworkShow([[500,.5,.3,'heart'],[1500,.2,.36,'peony'],[1900,.8,.3,'peony'],[3000,.35,.22,'ring'],[3400,.66,.26,'peony'],[4600,.5,.28,'heart'],[5200,.14,.4,'ring'],[5400,.86,.4,'peony']]);
-  setTimeout(flyAngels,1400);
-  const dawn=$('dawn');
-  dawn.hidden=false;
-  requestAnimationFrame(()=>requestAnimationFrame(()=>dawn.classList.add('show')));
-  setTimeout(()=>$('horizon').scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'}),900);
-  try{ac=new (window.AudioContext||window.webkitAudioContext)();mBtn.style.display='block';setMusic(true);}catch(e){}
-});
-
-function flyAngels(){
-  if(reduce)return;
-  const src=document.querySelector('#heaven .ang svg'),box=$('sideAngels');
-  [['l',0,'#4a2a3a'],['r',1.3,'#7a4636']].forEach(([side,delay,hair])=>{
-    const w=document.createElement('div');w.className='sa '+side;w.style.animationDelay=delay+'s';
-    const sv=src.cloneNode(true);
-    sv.querySelectorAll('[fill="#4a2a3a"]').forEach(e=>e.setAttribute('fill',hair));
-    w.appendChild(sv);box.appendChild(w);
-    setTimeout(()=>w.remove(),(12+delay)*1000+500);
-  });
-}
-(function(){
-  const f=document.querySelector('.finale');
-  if('IntersectionObserver' in window){
-    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){flyAngels();fireworkShow([[0,.3,.3,'peony'],[800,.7,.28,'heart'],[1700,.5,.2,'ring']]);io.disconnect();}}),{threshold:.6});
-    io.observe(f);
-  }
-})();
-
-const notes=[
- "You are the calm people carry with them long after they have left your company.",
- "Some people light up a room. You warm it. There is a difference, and everyone feels it.",
- "The world is simply a better-written story with you in it.",
- "Your smile is a small, quiet miracle. Please keep handing them out.",
- "Even the stars agreed to dim a little tonight, just so you could shine. We asked. ✨",
- "Sweet heart, steady soul, impeccable taste in everything, including friends. 😉",
- "You are the reason \"kind\" became the most beautiful word in the language.",
- "The cake is delicious, but you are still the sweetest thing at this party. 🎂",
- "If gentleness had a signature, it would look a lot like yours.",
- "You have been extraordinary for as long as anyone has known you, and so gracefully that the world forgot to say thank you. Thank you. 🤍"
-];
-let ni=-1;
-$('noteBtn').addEventListener('click',e=>{
-  let i;do{i=Math.floor(Math.random()*notes.length)}while(i===ni);ni=i;
-  const s=$('slip');s.textContent=notes[i];
-  s.classList.remove('swap');void s.offsetWidth;s.classList.add('swap');
-  e.currentTarget.textContent='Another one, please';
-  const r=e.currentTarget.getBoundingClientRect();
-  burst(22,r.left+r.width/2,r.top);
-});
-</script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
